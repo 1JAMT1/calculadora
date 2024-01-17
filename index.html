@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var edad = prompt("Por favor, ingresa tu año de nacimiento:");
+        var anio = 2024;    
+        var edadFinal = anio - parseInt(edad);
+        var parrafo = document.createElement("p");
+        var textNode = document.createTextNode("Tu edad es: " + edadFinal + " años.");
+        parrafo.appendChild(textNode);
+        document.body.appendChild(parrafo);
+        console.log("Edad: " + edadFinal);
+    </script>
+
+</body>
+</html>
